@@ -1,0 +1,61 @@
+{
+  "name": "react-input-emoji-v3",
+  "type": "module",
+  "version": "1.0.9",
+  "description": "A simple and customizable emoji input component for React, Typescript and Tailwind CSS.",
+  "author": "awebcode",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/awebcode/smiley-input"
+  },
+  "keywords": [
+    "emoji",
+    "input",
+    "react",
+    "smiley",
+    "react-emoji",
+    "emoji-picker",
+    "smiley-input",
+    "emoji-input",
+    "emoji-input-component",
+    "react-emoji-input",
+    "react-smiley-input",
+    "react-input-emoji"
+  ],
+  "main": "/dist/index.js",
+  "module": "/dist/index.mjs",
+  "types": "/dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "prepare": "rm -rf dist && npm run build",
+    "build": "tsup",
+    "prepublishOnly": "npm version patch --no-git-tag-version"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "tsup": "^8.3.5"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@emoji-mart/data": "^1.2.1",
+    "@emoji-mart/react": "^1.1.1",
+    "@radix-ui/react-dropdown-menu": "^2.1.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
