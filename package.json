@@ -1,7 +1,7 @@
 {
   "name": "react-input-emoji-v3",
   "type": "module",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "A simple and customizable emoji input component for React, Typescript and Tailwind CSS.",
   "author": "awebcode",
   "license": "MIT",
